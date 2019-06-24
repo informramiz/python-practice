@@ -21,3 +21,10 @@ for index, value in enumerate(my_list):
 dictionary = {"first_name": "Ramiz", "last_name": "Raja"}
 for key in dictionary:
     print(dictionary[key])
+
+#append data to new array
+newList = []
+for key in dictionary:
+    newList.append(dictionary[key])
+
+print(newList)
