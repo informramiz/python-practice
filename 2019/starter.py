@@ -28,3 +28,8 @@ for key in dictionary:
     newList.append(dictionary[key])
 
 print(newList)
+
+def sum(a, b):
+    return a + b
+
+print(sum(1, 2))
