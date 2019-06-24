@@ -48,3 +48,16 @@ print("First 5 even numbers")
 even_generator = next_even()
 for i in range(5):
     print(next(even_generator))
+
+
+#classes
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def getName(self):
+        return self.name
+
+person = Person('Ramiz', 20)
+print(person.getName())
