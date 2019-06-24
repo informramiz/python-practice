@@ -29,7 +29,22 @@ for key in dictionary:
 
 print(newList)
 
+# functions
 def sum(a, b):
     return a + b
 
 print(sum(1, 2))
+
+#generators to deal with large data sets
+def next_even():
+    n = 0
+    while True:
+        yield n
+        n += 2
+
+print()
+print("First 5 even numbers")
+#get the reference to generator so that this reference maintains state and not reset
+even_generator = next_even()
+for i in range(5):
+    print(next(even_generator))
